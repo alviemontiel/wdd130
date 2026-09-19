@@ -4,7 +4,6 @@
     /* light-brown */
     --accent1-color: #264653;
     /* dark state blue */
-    --accent2-color: #c1bde5;
     /* lavender blue */
     --heading-font: "Times New Roman",
         "Georgia",
@@ -90,9 +89,10 @@ footer {
 }
 
 .hero article img {
+    position: relative;
     float: right;
     width: 125px;
     border: 1px;
     margin: 2px;
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px var(--accent1-color);
 }
