@@ -65,23 +65,6 @@ h2 {
     align-items: center;
 }
 
-figure {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-figure img {
-    width: 150px;
-    height: 160px;
-    display: grid;
-    grid-row: 2/5;
-    justify-content: space-between;
-    border: 1px;
-    margin: 2px;
-    box-shadow: 0 0 30px var(--accent1-color);
-
-}
-
 h1 {
     position: absolute;
     top: 20px;
@@ -171,5 +154,24 @@ footer {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
     font-weight: 400;
+}
 
+.trip {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    gap: 11px;
+}
+
+.trip img {
+    width: 150px;
+    height: 160px;
+    box-shadow: 0 0 30px var(--accent1-color);
+}
+
+.trip figcaption {
+    color: #153737;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 5px;
 }
