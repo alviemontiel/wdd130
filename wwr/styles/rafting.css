@@ -1,10 +1,9 @@
 :root {
-    --primary-color: #1D635D;
-    --secondary-color: #bc9882;
+    --primary-color: #153737;
+    --secondary-color: gainsboro;
     /* light-brown */
     --accent1-color: #264653;
-    /* dark state blue */
-    /* lavender blue */
+    --accent2-color: #f0dc00;
     --heading-font: "Times New Roman",
         "Georgia",
         serif;
@@ -17,22 +16,12 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--secondary-color);
-}
-
 head,
 main,
-footer {
+footer,
+header {
     width: 840px;
     margin: auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 nav,
@@ -41,6 +30,56 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+}
+
+nav {
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 200%;
+    padding: 50px;
+    background-color: var(--accent2-color);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    align-items: center;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+figure img {
+    width: 150px;
+    height: 160px;
+    display: grid;
+    grid-row: 2/5;
+    justify-content: space-between;
+    border: 1px;
+    margin: 2px;
+    box-shadow: 0 0 30px var(--accent1-color);
+
 }
 
 h1 {
@@ -54,14 +93,46 @@ h1 {
     color: white;
 }
 
+h2 {
+    margin: 20px 0 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0, 0.7;
+    background-color: var(--primary-color);
+    color: white;
+}
+
 footer {
     border-top: 1px solid black;
     margin-top: 50px;
     padding: 1px;
     color: black;
+    display: flex;
+    align-items: center;
+    background-color: var(--accent2-color);
 }
 
 /* Class Selector */
+.history div {
+    color: #153737;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(275px, 1fr));
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.history h2 {
+    grid-column: 1/4
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px var(--accent1-color);
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -69,11 +140,14 @@ footer {
 .socialmedia img {
     width: 50px;
     height: auto;
+    margin-left: 10px;
+    float: right;
 
 }
 
 .hero {
     position: relative;
+    margin-bottom: 250px;
 }
 
 .hero img {
@@ -94,6 +168,8 @@ footer {
 
 .hero article {
     position: absolute;
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    font-weight: 400;
+
 }
