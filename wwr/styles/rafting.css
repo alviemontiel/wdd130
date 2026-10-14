@@ -56,7 +56,7 @@ nav ul {
 
 body {
     font-family: var(--body-font);
-    color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 h1,
@@ -174,4 +174,101 @@ footer {
     font-size: .8rem;
     text-align: center;
     margin-top: 5px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    position: relative;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.form-column {
+    flex: 1;
+}
+
+/* -------------------------------------- */
+
+.header-section p {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-row label.main-label {
+    width: 120px;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+
+.form-input-group input[type="text"],
+.form-input-group input[type="email"],
+.form-input-group textarea {
+    margin: 20px;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.radio-group label {
+    margin-left: 5px;
+}
+
+.newsletter-row {
+    margin-bottom: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-row input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    background-color: #e0e0e0;
 }
