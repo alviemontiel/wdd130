@@ -8,40 +8,37 @@
 </head>
 
 <body>
-    <pheader>
-        <h1>WDD 130 / HTML Form - User Poll</h1>
-    </pheader>
 
-    <pbody>
-        <form>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="useremail">Email</label>
-                <input type="email" id="useremail" name="useremail" required>
-            </fieldset>
-            <fieldset>
-                <legend>Questions</legend>
-                <label for="browser">What is your favorite internet browser?</label>
-                <select name="browser" id="browser">
-                    <option value="1">Chrome</option>
-                    <option value="2">Firefox</option>
-                    <option value="3">Safari</option>
-                    <option value="4">Edge</option>
-                    <option value="5">Brave</option>
-                    <option value="6">Other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="places">List the places you have lived</label>
-                <textarea id="palces" name="places" rows="4"
-                  placeholder="Dumaguete City, Dipolog City, Cebu City, Siaton"></textarea>
-            </fieldset>
-            <button type="submit">Submit Poll</button>
-        </form>
-    </pbody>
-    <pfooter></pfooter>
+    <h1>WDD 130 / HTML Form - User Poll</h1>
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="useremail">Email</label>
+            <input type="email" id="useremail" name="useremail" required>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <label for="browser">What is your favorite internet browser?</label>
+            <select name="browser" id="browser">
+                <option value="1">Chrome</option>
+                <option value="2">Firefox</option>
+                <option value="3">Safari</option>
+                <option value="4">Edge</option>
+                <option value="5">Brave</option>
+                <option value="6">Other</option>
+            </select>
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            <label for="textarea">List the places you have lived</label>
+            <textarea id="palces" name="places" rows="4"
+              placeholder="Dumaguete City, Dipolog City, Cebu City, Siaton"></textarea>
+        </fieldset>
+        <button type="submit">Submit Poll</button>
+    </form>
+
 </body>
 
 </html>
